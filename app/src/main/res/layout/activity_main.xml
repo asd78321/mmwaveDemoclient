@@ -8,37 +8,38 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/state"
+        android:layout_width="0dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginLeft="124dp"
+        android:layout_marginTop="22dp"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/x" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="87dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="12dp"
+        android:text="Results:"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
         android:id="@+id/state2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="92dp"
         android:layout_marginLeft="92dp"
-        android:layout_marginTop="220dp"
+        android:layout_marginTop="16dp"
         android:textSize="24sp"
-        app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/name" />
-
-    <TextView
-        android:id="@+id/Z_ID"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
-        android:layout_marginLeft="5dp"
-        android:layout_marginTop="216dp"
-        android:textSize="18sp"
-        app:layout_constraintStart_toEndOf="@+id/z"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/Y_ID"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
-        android:layout_marginLeft="5dp"
-        android:layout_marginTop="192dp"
-        android:textSize="18sp"
-        app:layout_constraintStart_toEndOf="@+id/y"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <TextView
         android:id="@+id/name"
@@ -63,10 +64,12 @@
         android:id="@+id/constate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="212dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="4dp"
         android:text="unconnect"
         android:textSize="24sp"
-        app:layout_constraintLeft_toRightOf="@+id/x"
+        app:layout_constraintStart_toEndOf="@+id/name"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
@@ -106,28 +109,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
-        android:text="x:"
+        android:text="Point Counts:"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/frmaes" />
 
-    <TextView
-        android:id="@+id/y"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="y:"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/x" />
-
-    <TextView
-        android:id="@+id/z"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="z:"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/y" />
     //座標資料敘述
 
     <TextView
@@ -151,13 +137,13 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="86dp"
-        android:layout_height="38dp"
-        android:layout_marginTop="36dp"
-        android:text="Results:"
+        android:layout_width="120dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="20dp"
+        android:text="Probability:"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Y_ID" />
+        app:layout_constraintTop_toBottomOf="@+id/x" />
 
 
     <!--<EditText
